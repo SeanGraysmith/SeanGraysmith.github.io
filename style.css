@@ -1,0 +1,40 @@
+/*setting background color,font family, and text color for the whole page. */
+body{
+	background-color:#000000;
+	color:#39FF14; /* this is neon green */
+	font-family:"Times New Roman", Arial, "Courier New";
+}
+
+/* style for about section */
+.about{
+	background-color: #111111;
+	outline-style: double;
+	outline-color: #FFFFFF;
+	outline-width: medium;
+}
+.skills{
+	background-color: #111111;
+	outline-style: double;
+	outline-color: #FFFFFF;
+	outline-width: medium;
+}
+.projects{
+	background-color: #1E1E1E;
+	outline-style: double;
+	outline-color: #FFFFFF;
+	outline-width: medium;
+	/* changing the font size of the link */
+	a{
+		font-size:1.5em;
+	}
+}
+.contact{
+	background-color: #1E1E1E;
+	outline-style: double;
+	outline-color: #FFFFFF;
+	outline-width: medium;
+	/* changing the font size of the link */
+	a{
+		font-size:1.5em;
+	}
+}
