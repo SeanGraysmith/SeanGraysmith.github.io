@@ -3,6 +3,7 @@ body{
 	background-color:#000000;
 	color:#39FF14; /* this is neon green */
 	font-family:"Times New Roman", Arial, "Courier New";
+	text-align: left;
 }
 
 /* style for about section */
@@ -36,5 +37,19 @@ body{
 	/* changing the font size of the link */
 	a{
 		font-size:1.5em;
+	}
+}
+.project {
+	width: 37%;
+	margin: 10px;
+	padding: 10px 10px;
+	background-color: #4F4F4F;
+	border-radius: 10%;
+	display:flex; flex-wrap:wrap; justify-content:center;
+	overflow: visible; overflow-wrap: break;
+	
+	img {
+		  max-width: 100%; 
+		  height: auto;    
 	}
 }
