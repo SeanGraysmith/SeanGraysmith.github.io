@@ -4,6 +4,10 @@ body{
 	color:#39FF14; /* this is neon green */
 	font-family:"Times New Roman", Arial, "Courier New";
 	text-align: left;
+	a{
+		text-decoration: none;
+		color: #AFDCEB;
+	}
 }
 
 /* style for about section */
@@ -48,8 +52,15 @@ body{
 	display:flex; flex-wrap:wrap; justify-content:center;
 	overflow: visible; overflow-wrap: break;
 	
+	p{
+		text-align: center;
+		margin: 15px;
+	}
+	
 	img {
-		  max-width: 100%; 
+		  width: 100%;
 		  height: auto;    
+		  border: 3.5px solid rgb(0,0,0);
+		  margin: auto;
 	}
 }
