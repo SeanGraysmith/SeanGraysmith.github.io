@@ -28,6 +28,14 @@ body{
 	outline-style: double;
 	outline-color: #FFFFFF;
 	outline-width: medium;
+	margin: 5px;
+	display:flex; flex-wrap:wrap; flex-direction: row; 
+	overflow: visible; overflow-wrap: break;
+	
+	h2::after{
+		white-space: pre;
+	}
+	
 	/* changing the font size of the link */
 	a{
 		font-size:1.5em;
@@ -44,14 +52,12 @@ body{
 	}
 }
 .project {
-	width: 37%;
 	margin: 10px;
 	padding: 10px 10px;
 	background-color: #4F4F4F;
 	border-radius: 10%;
-	display:flex; flex-wrap:wrap; justify-content:center;
-	overflow: visible; overflow-wrap: break;
-	
+	width: 25%;
+	height: 40%;
 	p{
 		text-align: center;
 		margin: 15px;
