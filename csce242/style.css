@@ -1,0 +1,56 @@
+body {
+    background: #040026;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* text styles */
+
+h1 {
+    color: #4E0091;
+}
+
+h2 {
+    color: #722DED;
+}
+
+p {
+    color: #722DED;
+}
+
+ol {
+    color: #342DED;
+    padding-left: 0;
+}
+
+ol li {
+    list-style-position: inside;
+}
+
+/* div formatting */
+div {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+#page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#introduction {
+    background-color: #7C9CED;
+    width: 50%;
+    
+}
+#assignments {
+    background-color: #6673C2;
+    width: 50%
+}
+/*links*/
+
+#assignments a:any-link{
+    color: #85338F;
+    text-decoration: none;
+}
