@@ -1,0 +1,58 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    text-align: center;
+
+    /* background image from: https://www.pexels.com/photo/blue-striped-abstract-background-13577780/ */
+    background-image: url(images/blue_background.jpeg);
+    background-size: contain;
+}
+
+/* text styling */
+h1{
+    color:#7DE1CA;
+}
+
+h2{
+    color:#4b8597;
+}
+
+p{
+    color:#2328EB;
+}
+
+/* div styling */
+div{
+    margin: 10px;
+    padding: 10px;
+    margin-right:auto;
+    margin-left:auto;
+}
+#page{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+}
+#paragraph1, #paragraph2, #data_table{
+    background-color:#C3BCEA;
+}
+
+/* table styling */
+table, td{
+    border: 5px solid;
+    align-self:center;
+    padding: 2px;
+    margin-right: auto;
+    margin-left: auto
+}
+td{
+    background-color: teal;
+    border-color:teal;
+    color:orange;
+}
+
+/* image styling*/
+img{
+    border: 5px solid;
+    padding: 2px;
+}
