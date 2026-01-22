@@ -4,7 +4,7 @@ body{
 
     /* background image from: https://www.pexels.com/photo/blue-striped-abstract-background-13577780/ */
     background-image: url(images/blue_background.jpeg);
-    background-size: contain;
+    background-size: cover;
 }
 
 /* text styling */
