@@ -46,7 +46,7 @@ body {
 }
 .window{
     flex:1;
-    margin-left:5px;
+    margin-left:0px;
     margin-right:5px;
 }
 .window h4 {
@@ -104,6 +104,7 @@ body {
 #top-header h1{
     color: teal;
     text-align: center;
+    padding:10px;
 }
 
 #important-text {
@@ -113,7 +114,7 @@ body {
 /* footer */
 #bottom-footer{
     text-align:center;
-    padding: 20px;
+    padding: 10px;
     background-color: salmon;
 }
 
