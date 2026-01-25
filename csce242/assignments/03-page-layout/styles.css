@@ -54,7 +54,7 @@ body {
     background-color:teal;
     color:white;
     margin-bottom:0px;
-    padding: 5px;
+    padding: 10px;
     margin-top:5px;
 }
 .window img {
@@ -107,7 +107,6 @@ body {
 }
 
 #important-text {
-    width: 25%;
     color:#B0C4DE;
 }
 
@@ -124,10 +123,12 @@ body {
 
 /* all larger devices */
 @media (min-width: 768px){
+    /* nav */
     #top-nav ul{
     flex-direction:row;
     }   
 
+    /* small windows */
     #small-windows {
     display:flex;
     flex-direction:row;
@@ -141,10 +142,20 @@ body {
     color:white;
     margin-right: 5px;
     margin-bottom:0px;
-    padding: 5px;
     margin-top:5px;
     }
+    #window-bar {
+        display:flex;
+        align-items:top;
+    }
+    
+    /* articles */
     .alternate-article,.regular-article{
         height:200px;
+    }
+
+    /* typography */
+    #window-bar h3{
+        margin-top:50px;
     }
 }
