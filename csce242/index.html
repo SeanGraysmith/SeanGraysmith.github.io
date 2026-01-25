@@ -7,21 +7,56 @@
     
     <body>
         <div id="page">
-            <div id="introduction">
+            <header id="main-header">
+                <div id="name-line">
+                    <h3>Sean Graysmith</h3> 
+                    <a href="https://github.com/SeanGraysmith/SeanGraysmith.github.io/tree/main/csce242">My GitHub Repository</a>
+                </div>
                 <h1>CSCE 242 - Web Applications</h1>
-                <h2>Sean Graysmith</h2>
-                <p>CSCE242 is a web development class that covers basic HTML, CSS, JavaScript, and database topics. 
-                    The course emphasizes clean and readable code, while also introducing how to design visually appealing websites.</p>
-                <a href="https://github.com/SeanGraysmith/SeanGraysmith.github.io/tree/main/csce242">My GitHub Repository</a>
-            </div>
-            <div id="assignments">
+            </header>
+            <main id="main-content">
                 <h2>Assignments</h2>
-                <ol>
-                    <li id="assignment_one"><a href="assignments/01-basic-html/index.html">Basic HTML</a></li>
-                    <li id="assignment_two"><a href="assignments/02-basic-css/index.html">Basic CSS</a></li>
-                    <li id="assignment_three"><a href="assignments/03-page-layout/index.html">Page Layout and Flex</a></li>
-                </ol>
-            </div>
+                <div id="assignment-list">
+                    <a href="assignments/01-basic-html/index.html">
+                        <section class="box-item">
+                            <h3>Assignment 1 - Basic HTML</h3>
+                            <img src="homepage-images/assignment1.png" alt="Assignment 1">
+                            <p>Assignment 1 cocuses on the basics of html where I created a simple webpage with little styling..</p>
+                        </section>
+                    </a>
+
+                    <a href="assignments/02-basic-css/index.html">
+                        <section class="box-item">
+                            <h3>Assignment 2 - Basic CSS</h3>
+                            <img src="homepage-images/assignment2.png" alt="Assignment 2">
+                            <p>Assignment 2 is designed to practice basic CSS styling with background images, color styling, and table styling.</p>
+                        </section>
+                    </a>
+
+                    <a href="assignments/03-page-layout/index.html">
+                        <section class="box-item">
+                            <h3>Assignment 3 - Page Layout</h3>
+                            <img src="homepage-images/assignment3.png" alt="Assignment 3">
+                            <p>Assignment 3 is an in depth flex assignment that uses flex and other tags to create a complex page layout.</p>
+                        </section>
+                    </a>
+                </div>
+
+                <h2>Projects</h2>
+                <div id="project-list">
+                    <a href="projects/part1/graysmith_projectp1_topic_selection.pdf">
+                        <section class="box-item">
+                            <h3>Project Part 1 - Topic Selection</h3>
+                            <img src="homepage-images/projectp1.png" alt="Project Topic">
+                            <p>My project idea is a website to hold my favorite recipes where other users to provide feedback on them.</p>
+                        </section>
+                    </a>
+                </div>
+            </main>
+
+            <footer>
+                <!-- Empty for now..-->
+            </footer>
         </div>
     </body>
 </html>
