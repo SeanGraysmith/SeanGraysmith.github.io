@@ -84,7 +84,7 @@ nav a {
     top:5%;
 }
 
-#login-nav li:not(:last-child) {
+#login-nav li:not(:last-child)::after {
     content:"|"
 }
 /* images */
