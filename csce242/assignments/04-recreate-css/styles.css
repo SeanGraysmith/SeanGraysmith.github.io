@@ -59,7 +59,7 @@ main {
     justify-content:flex-start;
 }
 
-#top-logo-bar {
+.logo-bar {
     display: flex;
     justify-content:space-between;
     align-items:center;
@@ -178,6 +178,7 @@ main {
 /* footers */
 #school-specific-footer {
     background-color:#EDEDED;
+    width:100%;
 }
 
 #school-specific-footer h2 {
@@ -205,6 +206,63 @@ main {
     justify-content:center;
     gap:3rem;
 }
+
+.link-section {
+    display:flex;
+    margin:auto;
+    width:100%;
+}
+
+#tri-section-links {
+    display:flex;
+}
+
+#social-links-footer {
+    flex-direction:column;
+}
+
+#social-links  ul li, #other-links ul li{
+    list-style:none;
+    padding-left:0px;
+}
+
+#social-links ul {
+    display:flex;
+    align-items:center;
+    margin-top:0px;
+    padding-top:0px;
+}
+
+#social-links ul li {
+    padding-right:10px;
+}
+
+#social-links ul li:first-child {
+    margin-right:40px;
+    padding:10px;
+    border:solid 2px white;
+    background-color:black;
+    color:white;
+}
+
+#address {
+    display: flex;
+    flex-direction:column;
+}
+
+#address a, #address p {
+    margin:10px;
+    text-align:left;
+}
+
+.link-section:not(:last-child){
+    border-right:2px #A3A3A3 solid;
+}
+
+#main-footer {
+    background-color:#75000A;
+}
+
 
 /* typography */
 a {
@@ -237,6 +295,32 @@ a {
     color:black;
 }
 
-#school-specific-footer h2, #school-specific-footer p {
+#footer-text h2, #footer-text p {
     text-align:center;
+}
+
+#other-links a {
+    text-decoration:none;
+}
+
+#other-links a, #address a {
+    color:#75000A;
+}
+
+#address a{
+    text-decoration:underline;
+}
+
+.link-section h4 a{
+    color:#75000A;
+    margin-left:45px;
+}
+
+.column {
+    display:flex;
+    flex-direction:column;
+}
+
+.column li a {
+    color:#75000A;
 }
