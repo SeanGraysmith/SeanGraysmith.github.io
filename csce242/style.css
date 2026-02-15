@@ -4,7 +4,9 @@ body {
 }
 
 /* text styles */
-
+#assignment-list {
+    
+}
 h1 {
     color: #f6edd4;
     text-align:center;
@@ -53,11 +55,13 @@ a{
     /* flex layout */
     #assignment-list{
         display:flex;
+        flex-wrap:wrap;
         justify-content:center;
         align-items:stretch;
     }
     #project-list{
         display:flex;
+        flex-wrap:wrap;
         justify-content:center;
         align-items:stretch;
     }
