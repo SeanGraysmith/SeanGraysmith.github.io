@@ -81,11 +81,12 @@ header{
     background-position:center;
 }
 
-.tint-background::before { /* here I am tinting the images with an overlay*/
+.tint-background::before { /* here I am tinting the entire sections that have images with overlay */
     content: "";
     position:absolute;
     inset:0;
     background:rgba(120,120,120,0.35);
+    pointer-events:none;
 }
 
 #top-intro h1 {
