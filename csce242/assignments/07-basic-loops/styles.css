@@ -1,0 +1,96 @@
+/* variables */
+:root {
+    --main-background: #0F172A;
+    --text-color: #E5E7EB;
+    --bubble-border: rgba(180, 230, 255, 0.7);
+    --bubble-fill: rgba(220, 245, 255, 0.3);
+    --rim-width: 320px;
+    --bowl-width: 560px;
+    --bowl-height: 480px;
+}
+
+/* page formatting */
+body {
+    background: var(--main-background);
+    color: var(--text-color);
+    text-align:center;
+}
+header {
+    margin-bottom:30px;
+}
+footer {
+    margin-top: 30px;
+}
+
+/* bubbles and keyframes animation */
+.bubble {
+    position:absolute;
+    bottom: 0;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    border: 1.5px solid var(--bubble-border);
+    background: var(--bubble-fill);
+
+    animation: rise 4s ease-in infinite;
+}
+
+@keyframes rise {
+    /* fade in */
+    0% {bottom: 0; opacity: 0;}
+    10% {opacity: 1;}
+    /* rise and fade out*/
+    100% {bottom:75%; opacity:0;}
+}
+/* Fishbowl Code Created by claude.ai */
+main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+}
+
+.bowl-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ── RIM ── */
+.rim {
+    width: var(--rim-width);
+    height: 22px;
+    background: linear-gradient(180deg, #b8d8ea, #7aafc8);
+    border-radius: 50%;
+    border: 3px solid #5a96b8;
+    position: relative;
+    z-index: 2;
+}
+
+/* ── BOWL ── */
+.bowl {
+    width: var(--bowl-width);
+    height: var(--bowl-height);
+    background: rgba(210, 235, 250, 0.3);
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+    border: 3px solid #5a96b8;
+    margin-top: -11px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+    inset -20px -10px 40px rgba(0, 60, 120, 0.15),
+    inset 15px 15px 30px rgba(255, 255, 255, 0.25),
+    0 8px 24px rgba(60, 120, 180, 0.3);
+}
+
+/* ── WATER ── */
+.water {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75%;
+    background: rgba(40, 120, 200, 0.4);
+    border-top: 2px solid rgba(140, 210, 255, 0.6);
+}
+/* end fishbowl code created by claude.ai */
