@@ -4,17 +4,16 @@
     --dark-gray:#333333;
     --light-gray: #D9D9D9;
     --button-yellow:#f2c64b;
+    --attribute-text: #084F09;
 }
 
 body {
     margin:0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: var(--dark-gray);
     color: var(--general-text);
 }
 
 #content {
-    max-width:75%;
     background: var(--general-background);
     margin:auto;
 }
@@ -76,17 +75,9 @@ header{
     min-height:220px;
     color:#fff;
     position:relative;
-    background-image: url(images/hero-pic.jpg);
+    background-image: url(images/hero-pic.png);
     background-size:cover;
     background-position:center;
-}
-
-.tint-background::before { /* here I am tinting the entire sections that have images with overlay */
-    content: "";
-    position:absolute;
-    inset:0;
-    background:rgba(120,120,120,0.35);
-    pointer-events:none;
 }
 
 #top-intro h1 {
@@ -110,17 +101,41 @@ header{
   justify-content:space-between;
 }
 
-
-/* popular recipes */
-#popular {
-    padding: 10px 16px 18px;
+.attribute-card {
     display:flex;
     flex-wrap:wrap;
+    font-size:125%;
+    align-items:center;
+}
+
+.attribute-card h3 {
+    max-width:150px;
+    padding-left:10px;
+    color: var(--attribute-text);
+}
+
+.attribute-card img {
+    width: 50px;
+    height: 75px;
+}
+
+/* popular recipes */
+#popular-recipe-content {
+    display:flex;
+    flex-direction:column;
 }
 
 #popular-heading {
-    max-width:84%;
     margin:auto;
+    padding:0px;
+    align-self:center;
+}
+
+#popular-cards {
+    padding-top:10px;
+    padding-bottom:18px;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 .recipe-card {
@@ -131,6 +146,7 @@ header{
     margin-bottom:14px;
     margin-left:auto;
     margin-right:auto;
+    padding: 10px;
 }
 
 .recipe-card img {
@@ -155,24 +171,29 @@ header{
 }
 
 /* why you'll love these.. */
+#why-container {
+    padding-bottom:10px;
+}
 #why-love {
     position:relative;
     padding: 18px 16px;
-    background-image: url(images/herbs-etc.jpg);
+    background-image: url(images/herbs-etc.png);
     background-size:cover;
     background-position:center;
+    text-align:center;
 }
 
 #why-love h1 {
     margin: 0 0 10px;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 #why-love ul {
+    list-style-type:none;
     margin:0px;
     padding-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size:15px;
+    font-size:20px;
 }
 
 #why-love li {
@@ -194,24 +215,28 @@ header{
     background-size:cover;
     background-position:center;
     display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
+    flex-wrap:wrap;
+    text-align:center;
+    align-items:center;
+    padding-top: 20px;
+    padding-bottom:20px;
 }
 
 #about-me {
-    margin:50px 20px;
+    margin:auto;
     background:var(--general-background);
     border-radius:15px;
     padding: 10px 8px;
     max-width: 600px;
+}
 
+#about-me p {
+    font-size: 200%;
 }
 
 #browse {
-    background:var(--light-gray);
-    margin-top:100px;
-    margin-bottom:50px;
-    margin-right:50px;
+    margin:auto;
+    background:var(--general-background);
     max-width:400px;
     min-height:100px;
     border-radius:20%;
