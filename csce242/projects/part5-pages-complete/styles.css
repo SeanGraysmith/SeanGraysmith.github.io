@@ -1,5 +1,6 @@
 :root{
     --general-background:#EEE9E2;
+    --popular-recipe-background: #ede7de;
     --general-text: #222222;
     --dark-gray:#333333;
     --light-gray: #D9D9D9;
@@ -23,7 +24,7 @@ body {
 header{
     background: var(--general-background);
     border-top:4px solid var(--dark-gray);
-    border-bottom: 2px solid var(--dark-gray)
+    border-bottom: 2px solid var(--dark-gray);
 }
 
 #topnav {
@@ -55,7 +56,7 @@ header{
   font-weight:700;
   font-size:30px;
 }
-#topnav-links li:first-child a{
+#topnav-links a.active {
   text-decoration:underline;
   text-underline-offset:6px;
 }
@@ -65,9 +66,10 @@ header{
   font-size:30px;
 }
 
-/* main content */
+/* home page content */
 
 #top-intro {
+    border-bottom: 2px solid var(--dark-gray);
     padding:26px 16px;
     min-height:220px;
     color:#fff;
@@ -79,23 +81,25 @@ header{
 
 #top-intro h1 {
     margin: 0 0 10px;
-    font-size: 28px;
+    font-size: 36px;
 }
 
 #top-intro h3 {
     margin: 0 0 14px; 
-    font-size: 20px; 
+    font-size: 25px; 
     font-weight:400;
     max-width:20%;
 }
 
 /* attribute cards */
-#attribute-cards{
-  padding:14px 16px 6px;
+#attribute-cards {
+  max-width: 80%;
+  padding:14px;
   display:flex;
   flex-wrap:wrap;
   gap:10px;
   justify-content:space-between;
+  margin:auto;
 }
 
 .attribute-card {
@@ -120,6 +124,8 @@ header{
 #popular-recipe-content {
     display:flex;
     flex-direction:column;
+    border-bottom: 2px solid var(--dark-gray);
+    padding-top: 20px;
 }
 
 #popular-heading {
@@ -133,23 +139,27 @@ header{
     padding-bottom:18px;
     display:flex;
     flex-wrap:wrap;
+    align-items:center;
 }
 
 .recipe-card {
     height: auto;
     max-width: 25%;
-    background: var(--general-background);
+    background: var(--popular-recipe-background);
     box-shadow:0 2px 6px rgba(0,0,0,.12);
     margin-bottom:14px;
     margin-left:auto;
     margin-right:auto;
     padding: 10px;
+    font-size:125%;
+    border-radius:5%;
 }
 
 .recipe-card img {
     width:90%;
     display:block;
     margin:auto;
+    border-radius:5%;
 }
 
 .recipe-card ul {
@@ -167,34 +177,41 @@ header{
     padding: 5px;
 }
 
-/* why you'll love these.. */
-#why-container {
-    padding-bottom:10px;
+.recipe-card:nth-child(2) {
+    padding-top:20px;
+    font-size:150%;
 }
+
+/* why you'll love these.. */
 #why-love {
     position:relative;
-    padding: 18px 16px;
+    padding: 10px;
     background-image: url(images/herbs-etc.png);
     background-size:cover;
     background-position:center;
-    text-align:center;
+    text-align:left;
 }
 
 #why-love h1 {
-    margin: 0 0 10px;
+    margin: auto;
     font-size: 36px;
+    margin-bottom:30px;
+    max-width:60%;
 }
 
 #why-love ul {
-    list-style-type:none;
-    margin:0px;
+    list-style-type:disc;
     padding-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size:20px;
+    max-width:60%;
+    margin:auto;
+    text-align:left;
 }
 
 #why-love li {
     margin:6px 0;
+    padding: 10px;
 }
 
 #why-content {
@@ -202,7 +219,7 @@ header{
     max-width:50%;
     margin:auto;
     padding: 10px 20px;
-    border-radius:5%;
+    border-radius:3%;
 }
 
 /* about me and browse gallery */
@@ -246,6 +263,7 @@ header{
 
 #browse img {
     margin: 10px;
+    border-radius:10%;
 }
 
 .action-button {
@@ -256,6 +274,92 @@ header{
     font-weight:1000;
     cursor:pointer;
     box-shadow:0 1px 0 rgba(0,0,0,.25);
+}
+
+/* recipes page */
+
+/* pasta page */
+
+/* gallery page */
+
+#gallery-page {
+    background-image: url(images/gallery-background.png);
+    background-size:cover;
+    background-position:center;
+}
+
+#gallery {
+    width:fit-content;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.gallery-section {
+    background: var(--general-background);
+    margin-bottom:10px;
+    display:flex;
+    gap:0px;
+    padding: 25px 0px;
+    align-items:center;
+    border-radius:5%;
+}
+
+.gallery-section button:first-child{
+    margin-left:auto;
+}
+
+.gallery-section button:last-child{
+    margin-right:auto;
+}
+
+.gallery-images {
+    display:flex;
+    justify-content:space-between;
+    gap:5rem;
+}
+
+.gallery-images img {
+    display:inline;
+}
+
+/* about page */
+
+#about-page {
+    background-image: url(images/about-background.png);
+    background-size:cover;
+    background-position:center;
+
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+}
+
+.about-card {
+    background: var(--general-background);
+    border-radius:2%;
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+
+    padding:20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    font-size:150%;
+}
+
+.question p {
+    margin:5px;
+}
+
+#ask input {
+    font-size:125%;
+    background:none;
+    border:none;
+    width:80%;
 }
 
 /* larger devices */
