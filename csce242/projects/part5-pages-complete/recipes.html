@@ -17,8 +17,110 @@
                     <li><a href="about.html">About</a></li>
                 </ul>
 
-                <button class="action-button">Random Recipe</button>
+                <a href="tomato-sauce-pasta.html"><button class="action-button">Random Recipe</button></a>
             </nav>
         </header>
+
+        <main id="recipes-page">
+            <h1>Browse All Recipes</h1>
+
+            <div id="recipes-filter-buttons">
+                <button class="action-button">All</button>
+                <button class="action-button inactive-button">Beginner</button>
+                <button class="action-button inactive-button">Budget</button>
+                <button class="action-button inactive-button">Quick</button>
+            </div>
+
+            <div id="recipes-list">
+                <div class="column">
+                    <section class="recipe-list-card">
+                        <img src="images/recipes/chicken-fajitas.png" alt="Chicken Fajitas">
+                        <h3>Chicken Fajita Pan Fry</h3>
+                        <div class="recipe-list-attributes">
+                            <p>$2.50/Serving</p>
+                            <p>25 Minutes</p>
+                        </div>
+                        <button class="action-button">View Recipe</button>
+                    </section>
+
+                    <section class="recipe-list-card">
+                        <img src="images/recipes/Caprese-chicken.png" alt="Caprese Chicken">
+                        <h3>Caprese Chicken</h3>
+                        <div class="recipe-list-attributes">
+                            <p>$2.75/Serving</p>
+                            <p>25 Minutes</p>
+                        </div>
+                        <button class="action-button">View Recipe</button>
+                    </section>
+                </div>
+
+                <div class="column">
+                    <section class="recipe-list-card">
+                        <img src="images/recipes/bbq-chicken.png" alt="BBQ Chicken Sliders">
+                        <h3>BBQ Chicken Sliders</h3>
+                        <div class="recipe-list-attributes">
+                            <p>$2.00/Serving</p>
+                            <p>30 Minutes</p>
+                        </div>
+                        <button class="action-button">View Recipe</button>
+                    </section>
+
+                    <section class="recipe-list-card">
+                        <img src="images/recipes/stuffed-bell-pepper.png" alt="Stuffed Bell Peppers">
+                        <h3>Stuffed Bell Peppers</h3>
+                        <div class="recipe-list-attributes">
+                            <p>$2.25/Serving</p>
+                            <p>35 minutes</p>
+                        </div>
+                        <button class="action-button">View Recipe</button>
+                    </section>
+                </div>
+
+                <div class="column">
+                    <section class="recipe-list-card">
+                        <img src="images/recipes/garlic-shrimp-pasta.png" alt="Garlic Shrimp Pasta">
+                        <h3>Garlic Shrimp Pasta</h3>
+                        <div class="recipe-list-attributes">
+                            <p>$3.00/Serving</p>
+                            <p>20 minutes</p>
+                        </div>
+                        <button class="action-button">View Recipe</button>
+                    </section>
+
+                    <section class="recipe-list-card">
+                        <img src="images/recipes/tomato-pasta.png" alt="Tomato Sauce Pasta">
+                        <h3>Tomato Sauce Pasta</h3>
+                        <div class="recipe-list-attributes">
+                            <p>$1.50/Serving</p>
+                            <p>20 minutes</p>
+                        </div>
+                        <a href="tomato-sauce-pasta.html"><button class="action-button">View Recipe</button></a>
+                    </section>
+                </div>
+            </div>
+
+            <div id="recipes-page-selector">
+                <h4>Showing page 1 of 2</h4>
+                <div id="page-number-buttons">
+                    <button class="action-button">1</button>
+                    <button class="action-button inactive-button">2</button>
+                </div>
+            </div>
+
+            <div id="recipes-cant-find">
+                <h2>Can't find what you want?</h2>
+                <div id="gallery-or-sort">
+                    <div id="gallery-or-choice-one">
+                        <h4>Take a look at the picture gallery</h4>
+                        <a href="gallery.html"><button class="action-button">See Completed Dishes</button></a>
+                    </div>
+
+                    <div id="gallery-or-choice-two">
+                        <h4>OR</h4>
+                        <h4>Try sorting by category!</h4>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
