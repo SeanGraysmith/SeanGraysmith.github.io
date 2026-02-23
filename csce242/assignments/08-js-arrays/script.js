@@ -45,7 +45,7 @@ const sadSongArray = {
 
 // function for adding embed code to the embed container
 function showEmbedForSong(src, title){
-    document.getElementById("video-embed").innerHTML = `<iframe src=${src} title="${title} width="971" height="555" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    document.getElementById("video-embed").innerHTML = `<iframe src=${src} title="${title} width="100%" height="100%" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 }
 
 // when the mood selector changes
