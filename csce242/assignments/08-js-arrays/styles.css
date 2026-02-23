@@ -1,0 +1,27 @@
+:root {
+    --main-background: #0F172A;
+    --text-color: #E5E7EB;
+}
+
+body {
+    background: var(--main-background);
+    color: var(--text-color);
+    text-align:center;
+}
+
+footer {
+    margin-top:50px;
+}
+
+ul {
+    list-style-type:none;
+}
+
+ul li {
+    margin:5px;
+    text-decoration:underline;
+}
+
+ul li a {
+    cursor:pointer;
+}
