@@ -47,6 +47,16 @@ a{
     margin:auto;
 }
 
+.box-item a {
+    text-decoration:underline;
+}
+
+.box-item ul {
+    list-style-type:none;
+    text-align:center;
+    padding-left:0px;
+}
+
 /* all larger devices */
 @media (min-width: 768px){
     /* flex layout */
