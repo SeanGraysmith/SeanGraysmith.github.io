@@ -64,11 +64,16 @@ function closeModal() {
     document.getElementById("modal-song-youtube").src = "";
 }
 
-// interestint extra function to close
+// interesting extra function to close
 // if you click outside of the modal, it closes
 window.onclick = (e) => {
-    if (e.target === document.getElementById("songModal"))
+    if (e.target === document.getElementById("songModal")) // === is specific equality
         closeModal();
+};
+
+// method to close (clicking the x)
+document.getElementById("modal-close-button").onclick = () => {
+    closeModal();
 };
 
 // simple array of songs
@@ -83,3 +88,4 @@ const songArray = [
 for (const song of songArray) {
     document.getElementById("songs").append(song.card);
 }
+

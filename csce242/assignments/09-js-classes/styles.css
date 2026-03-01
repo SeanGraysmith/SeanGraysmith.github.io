@@ -69,8 +69,8 @@ body {
     padding:0px;
 }
 #modal-text {
-    min-width:200px;
-    align-content:center;
+    text-align:left;
+    min-width:400px;
     margin-left:5px;
 }
 
