@@ -3,9 +3,40 @@
     <head>
         <title>Assignment 9 - JavaScript Classes</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     </head>
 
     <body>
-        <div id="songs"></div>
+        <main>
+            <h1>Assignment 9 - Classes</h1>
+            <h2>Music</h2>
+            <div id="songs"></div>
+
+            <!-- Modal Content -->
+             <div id="songModal" class="w3-modal">
+                <div id="modal-content" class="w3-modal-content">
+                    <header class="w3-container">
+                        <button id="modal-close-button" class="w3-button w3-display-topright">&times;</button>
+                    </header>
+                    <div id="modal-song-content" class="w3-container">
+                        <div id="modal-youtube-container">
+                            <iframe id="modal-song-youtube" src="" allowfullscreen></iframe>
+                        </div>
+
+                        <div id="modal-text">
+                            <h2 id="modal-song-title"></h2>
+                            <p id="modal-song-artist"></p>
+                            <p id="modal-song-album-year"></p>
+                            <p id="modal-song-genre"></p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </main>
+
+        <footer>
+            <p>@SeanGraysmith</p>
+        </footer>
     </body>
+    <script src="script.js"></script>
 </html>
