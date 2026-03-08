@@ -10,7 +10,7 @@
     },
     {
         "id":2,
-        "img":"images/gallery/tacos.png",
+        "img":"images/recipes/tacos.png",
         "title":"Tacos",
         "cost":1.5,
         "time":25,
@@ -19,7 +19,7 @@
     },
     {
         "id":3,
-        "img":"images/gallery/Bun_bo.png",
+        "img":"images/recipes/Bun_bo.png",
         "title":"Bún bò Huế",
         "cost":3,
         "time":60,
@@ -28,7 +28,7 @@
     },
     {
         "id":4,
-        "img":"images/gallery/banh-mi.png",
+        "img":"images/recipes/banh-mi.png",
         "title":"Bánh mì",
         "cost":2.0,
         "time":15,
@@ -46,7 +46,7 @@
     },
     {
         "id":6,
-        "img":"images/gallery/ravioli.png",
+        "img":"images/recipes/ravioli.png",
         "title":"Ravioli",
         "cost":2.0,
         "time":30,
@@ -55,7 +55,7 @@
     },
     {
         "id":7,
-        "img":"images/gallery/hawaiian-pizza.png",
+        "img":"images/recipes/hawaiian-pizza.png",
         "title":"Homemade Pizza",
         "cost":2.0,
         "time":45,
