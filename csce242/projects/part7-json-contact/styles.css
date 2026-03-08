@@ -311,6 +311,7 @@ header{
 
 #recipes-page h1 {
     margin:10px;
+    margin-left:65px;
     margin-top:0px;
     padding-top:10px;
 }
@@ -329,6 +330,7 @@ header{
 
 #recipes-filter-buttons {
     margin:10px;
+    margin-left:65px;
 }
 
 .recipe-list-card {
@@ -435,6 +437,23 @@ header{
     justify-content:space-between;
 }
 
+.calc-iframe {
+    height:400px;
+    width:90%;
+    margin:20px;
+    border-radius:5%;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+#between-iframe {
+    display:none;
+}
+
+#left-iframe {
+    display:inline;
+}
+
 /* ingredients and instructions */
 .recipe-instructions-container {
     display:flex;
@@ -463,7 +482,7 @@ header{
     padding:30px;
     border-radius: 3%;
     width:auto;
-    margin:20px;
+    margin:20px 0px;
 }   
 .instructions ol {
     padding-left:25px;
@@ -558,6 +577,13 @@ header{
     border:none;
     width:80%;
 }
+#ask label {
+    vertical-align:top;
+}
+
+#ask textarea {
+    width:100%;
+}
 
 /* larger devices */
 @media (min-width: 768px) {
@@ -594,6 +620,10 @@ header{
     #popular-cards{
         flex-direction:row;
         align-content:flex-start;
+    }
+
+    .recipe-instructions-container {
+        align-items:flex-start;
     }
 
     .recipe-card {
@@ -639,6 +669,8 @@ header{
         width:100%;
         margin-left:auto;
         margin-right:10px;
+        margin-top:20px;
+        margin-bottom:auto;
     }
 
     .ingredients-extras {
@@ -648,6 +680,19 @@ header{
         flex-direction:column;
         justify-content:space-between;
         gap:1rem;
+    }
+    .calc-iframe {
+        width:100%;
+        height:300px;
+        margin:auto;
+    }
+
+    #between-iframe {
+        display:inline;
+    }
+
+    #left-iframe {
+        display:none;
     }
 
     .ingredients {

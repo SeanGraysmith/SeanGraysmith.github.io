@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "img":"images/recipes/tomato-pasta.png",
+        "title":"Tomato Sauce Pasta",
+        "cost":1.5,
+        "time":20,  
+        "page-link":"tomato-sauce-pasta.html"
+
+    },
+    {
+        "id":2,
+        "img":"images/gallery/tacos.png",
+        "title":"Tacos",
+        "cost":1.5,
+        "time":25,
+        "page-link":"recipes.html"
+
+    },
+    {
+        "id":3,
+        "img":"images/gallery/Bun_bo.png",
+        "title":"Bún bò Huế",
+        "cost":3,
+        "time":60,
+        "page-link":"recipes.html"
+
+    },
+    {
+        "id":4,
+        "img":"images/gallery/banh-mi.png",
+        "title":"Bánh mì",
+        "cost":2.0,
+        "time":15,
+        "page-link":"recipes.html"
+
+    },
+    {
+        "id":5,
+        "img":"images/recipes/stuffed-bell-pepper.png",
+        "title":"Stuffed Bell Peppers",
+        "cost":2.25,
+        "time":35,
+        "page-link":"recipes.html"
+
+    },
+    {
+        "id":6,
+        "img":"images/gallery/ravioli.png",
+        "title":"Ravioli",
+        "cost":2.0,
+        "time":30,
+        "page-link":"recipes.html"
+
+    },
+    {
+        "id":7,
+        "img":"images/gallery/hawaiian-pizza.png",
+        "title":"Homemade Pizza",
+        "cost":2.0,
+        "time":45,
+        "page-link":"recipes.html"
+
+    },
+    {
+        "id":8,
+        "img":"images/recipes/garlic-shrimp-pasta.png",
+        "title":"Garlic Seafood Pasta",
+        "cost":3.0,
+        "time":20,
+        "page-link":"recipes.html"
+
+    }
+]

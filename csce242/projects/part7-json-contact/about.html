@@ -56,9 +56,30 @@
 
             <div id="ask" class="about-card">
                 <h2>Ask a question</h2>
-                <input placeholder="Type your question here...">
+                <form id="ask-form" method="POST">
+                    <input type="hidden" name="access_key" value="3925c134-3dc6-4ff2-9d39-6ac0475d907a">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input placeholder="type your name here" type="text" name="name" id="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input placeholder="type your email here" type="email" name="email" id="email" required>
+                    </p>
+                
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </p>
+
+
+                    <p><button type="submit">Submit</button></p>
+                </form>
+                <h3 id="form-result"></h3>
             </div>
         </main>
     </body>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
 </html>
