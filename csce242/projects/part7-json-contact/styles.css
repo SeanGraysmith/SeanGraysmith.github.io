@@ -138,7 +138,7 @@ header{
 }
 
 .attribute-card img {
-    width: 50px;
+    width: 75px;
     height: 75px;
 }
 
@@ -321,11 +321,14 @@ header{
     flex-direction:column;
     flex-wrap:wrap;
     margin:auto;
-    align-items:center;
+    justify-content:center;
+    gap:2rem;
 }
 
 .column{
     flex:1;
+    max-width:500px;
+    margin:auto;
 }
 
 #recipes-filter-buttons {
@@ -631,10 +634,9 @@ header{
     }
 
     .recipe-list-card {
-        max-width:75%;
+        max-width:90%;
         margin:auto;
-        margin-bottom:20px;
-        align-items:center;   
+        margin-bottom:20px; 
     }
 
     .recipe-list-card img {

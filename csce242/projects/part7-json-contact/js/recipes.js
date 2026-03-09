@@ -83,6 +83,54 @@ const addRecipes = async() => {
             counter++;
         }
     });
+    createDynamicPages();
 };
+
+// dynamic page generation logic
+// essentially, 3 columns are shown at a time
+function createDynamicPages() {
+    const recipesList = document.getElementById("recipes-list");
+    const columns = Array.from(recipesList.children); // gets every child (column)
+    const COLUMNS_PER_PAGE = 3;
+    let currentPage = 1;
+    const totalPages = Math.ceil(columns.length / COLUMNS_PER_PAGE);
+
+    function showPageNum(pageNum) {
+        currentPage = pageNum;
+
+        // show columns for this page, hide others
+        columns.forEach((column, i) => {
+            const columnPage = Math.floor(i / COLUMNS_PER_PAGE) + 1;
+            column.style.display = columnPage === pageNum ? "" : "none";
+        });
+
+        // set page display text
+        document.getElementById("recipes-pagenum-header").innerHTML = 
+        `Showing page ${pageNum} of ${totalPages}`;
+
+        // set buttons to active and inactive
+        document.querySelectorAll("#page-number-buttons button").forEach((button, i) => {
+            button.classList.toggle("inactive-button", i + 1 !== pageNum);
+        });
+    }
+
+    // create page buttons for number of pages. 
+    const buttonsDiv = document.getElementById("page-number-buttons");
+    buttonsDiv.innerHTML = "";
+    for (let i = 1; i <= totalPages; i++) {
+        const button = document.createElement("button");
+        button.classList.add("action-button");
+        if (i !== 1) {
+            // only set inactive when not page 1 button
+            button.classList.add("inactive-button"); 
+        }
+        button.innerHTML = i;
+        button.onclick = () => { // show its page when clicked
+            showPageNum(i);
+        };
+        buttonsDiv.append(button);
+    }
+    showPageNum(1); //start with first page shown.
+}
 
 addRecipes();
