@@ -57,6 +57,13 @@ a{
     padding-left:0px;
 }
 
+#project-links {
+    display:flex;
+    gap:2rem;
+    margin: 0;
+}
+
+
 /* all larger devices */
 @media (min-width: 768px){
     /* flex layout */
